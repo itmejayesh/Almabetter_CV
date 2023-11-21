@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<link rel="stylesheet" href="output.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<!-- Desktop version -->
+		<nav
+			class="justify-around items-center h-[17vh] cursor-default hidden lg:flex"
+		>
+			<div class="text-3xl font-bold">Jayesh.</div>
+			<div>
+				<ul class="flex gap-8 text-lg">
+					<li><a class="hover:text-gray-500" href="#about">About Me</a></li>
+					<li>
+						<a class="hover:text-gray-500" href="#portfolio">Portfolio</a>
+					</li>
+					<li><a class="hover:text-gray-500" href="#skills">Skills</a></li>
+					<li><a class="hover:text-gray-500" href="#blog">Blog</a></li>
+					<li><a class="hover:text-gray-500" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Mobile version -->
+		<nav
+			id="hamburger-nav"
+			class="flex items-center justify-around lg:hidden h-[17vh]"
+		>
+			<div class="text-3xl font-bold">Jayesh.</div>
+			<div class="relative inline-block">
+				<div
+					class="hamburger-icon flex flex-col justify-between h-6 w-8 cursor-pointer"
+					onclick="toggleMenu()"
+				>
+					<span class="w-full h-1 bg-black"></span>
+					<span class="w-full h-1 bg-black"></span>
+					<span class="w-full h-1 bg-black"></span>
+				</div>
+				<div
+					id="menu-links"
+					class="menu-links absolute top-full right-0 bg-white w-fit h-0 overflow-hidden transition-all ease-in-out"
+				>
+					<div></div>
+					<ul class="text-lg">
+						<li>
+							<a
+								class="hover:text-gray-500 block p-1 text-center text-2xl text-black transition-all ease-in-out"
+								href="#about"
+								>About Me</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-gray-500 block p-1 text-center text-2xl text-black transition-all ease-in-out"
+								href="#portfolio"
+								>Portfolio</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-gray-500 block p-1 text-center text-2xl text-black transition-all ease-in-out"
+								href="#"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-gray-500 block p-1 text-center text-2xl text-black transition-all ease-in-out"
+								href="#skills"
+								>Skills</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-gray-500 block p-1 text-center text-2xl text-black transition-all ease-in-out"
+								href="#blog"
+								>Blog</a
+							>
+						</li>
+						<li>
+							<a
+								class="hover:text-gray-500 block p-1 text-center text-2xl text-black transition-all ease-in-out"
+								href="#contact"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section
+			id="home"
+			class="pt-[4vh] mx-10 box-border gap-5 min-h-[80vh] mb-10"
+		>
+			<div class="flex flex-col justify-center items-center gap-5 h-[80vh]">
+				<img
+					class="flex h-[300px] w-[300px] mx-0"
+					src="./assets/profile-pic.png"
+					alt="Jayesh Gadhok"
+				/>
+				<div class="flex flex-col text-center items-center self-center gap-10">
+					<p class="font-bold text-4xl tracking-wide leading-10">
+						Hi, I am <span class="text-blue-700">Jayesh.</span> <br />
+						Frontent Developer
+					</p>
+					<p class="text-gray-400">
+						How do you know you are a web developer? A: You <br />
+						spend more time debugging than developing
+					</p>
+					<button
+						class="bg-blue-700 w-[70%] hover:bg-white hover:text-black hover:border-blue-700 border-2 text-white p-4 rounded-xl"
+						onclick="window.open('./assets/profile-pic.png')"
+					>
+						Download Resume
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section
+			id="about"
+			class="pt-[4vh] mx-10 box-border gap-5 min-h-[80vh] mb-10"
+		>
+			<div class="flex justify-center flex-col items-center sm:mb-5">
+				<p class="text-gray-400 text-lg">Get To Know More</p>
+				<h1 class="font-bold text-4xl">About Me</h1>
+			</div>
+
+			<div
+				class="flex flex-col lg:flex-row justify-center lg:justify-center px-4 items-center gap-x-40 h-[80vh]"
+			>
+				<!-- Image container -->
+				<img
+					class="flex w-[250px] lg:w-[300px] mx-0 rounded-lg my-4"
+					src="./assets/about-pic.png"
+					alt="Jayesh Gadhok"
+				/>
+				<!-- text container -->
+				<div class="flex flex-col lg:items-start items-center gap-5">
+					<p class="font-bold text-2xl lg:text-4xl tracking-wide leading-10">
+						Delighted To <span class="text-blue-700">Meet</span>
+						You
+					</p>
+					<p class="text-gray-400 text-justify md:text-sm w-[600px]">
+						I am a highly skilled and dedicated Developer specializing in
+						frontend development, with a strong passion for designing and
+						building intuitive and visually appealing user interfaces. My
+						expertise lies in HTML, CSS, JavaScript, and various libraries and
+						frameworks. With a keen eye for detail and a commitment to
+						delivering high-quality solutions, I strive to create responsive and
+						cross-browser compatible designs that enhance the user experience.
+						Throughout my career, I have consistently demonstrated my ability to
+						collaborate effectively within multidisciplinary teams and adapt to
+						evolving project requirements. With a strong foundation in front-end
+						development principles and a continuous desire to learn and grow, I
+						am excited to contribute my skills and expertise to cutting-edge
+						projects pushing innovation's boundaries.
+					</p>
+					<button
+						class="bg-blue-700 lg:w-[50%] w-[40%] hover:bg-white hover:text-black hover:border-blue-700 border-2 text-white p-4 rounded-xl"
+						onclick="window.open('https://www.linkedin.com/in/jayesh-gadhok-138462152/', '_blank')"
+					>
+						learn more
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section
+			id="skills"
+			class="pt-[4vh] mx-10 box-border gap-5 min-h-[80vh] mb-10"
+		>
+			<div class="text-center">
+				<p class="text-gray-400 text-lg">Explore My</p>
+				<h1 class="font-bold text-4xl">Technical Skills</h1>
+			</div>
+			<div
+				class="flex flex-col lg:flex-row justify-center items-center py-10 gap-x-4 gap-y-5"
+			>
+				<div class="flex flex-col border border-black p-10 rounded-xl">
+					<h2 class="text-center font-bold pb-8">Frontend Development</h2>
+
+					<article
+						class="grid grid-rows-4 grid-flow-col gap-4 gap-x-10 w-[40vh]"
+					>
+						<div class="flex py-2 columns-1">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">HTML</h3>
+						</div>
+						<div class="flex py-2 columns-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">CSS</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">SASS</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">Tailwind Css</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">JavaScript</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">Material UI</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">TypeScript</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">React Js</h3>
+						</div>
+					</article>
+				</div>
+				<div class="flex flex-col border border-black p-10 rounded-xl">
+					<h2 class="text-center font-bold pb-8">Backend Development</h2>
+
+					<article
+						class="grid grid-rows-4 grid-flow-col gap-4 gap-x-10 w-[40vh]"
+					>
+						<div class="flex py-2 columns-1">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">Node js</h3>
+						</div>
+						<div class="flex py-2 columns-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">Github</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">Express Js</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">Netlify</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">MongoDB</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">FireBase</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">Vercel</h3>
+						</div>
+						<div class="flex py-2">
+							<img src="./assets/checkmark.png" alt="check-icon" width="30" />
+							<h3 class="px-5">Heroku</h3>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section
+			id="portfolio"
+			class="pt-[4vh] mx-10 box-border gap-5 min-h-[80vh] mb-10"
+		>
+			<div class="text-center">
+				<p class="text-gray-400 text-lg">Browse My Recent</p>
+				<h1 class="font-bold text-4xl">Projects</h1>
+			</div>
+			<div class="flex gap-4 flex-wrap justify-center py-10 gap-y-10 relative">
+				<div class="rounded-lg p-10 text-center border-2 border-black">
+					<img
+						class="rounded-lg w-[300px] h-[300px] object-cover"
+						src="https://beebom.com/wp-content/uploads/2020/03/PeerTube.jpg"
+						width="300"
+						alt=""
+					/>
+					<h2 class="font-bold text-3xl py-4">Project One</h2>
+					<div class="flex justify-center gap-10">
+						<button
+							class="border-2 p-4 rounded-full w-full"
+							onclick="window.open('https://github.com/itmejayesh/GTUBE','_blank')"
+						>
+							Github
+						</button>
+						<button
+							class="border-2 p-4 rounded-full w-full"
+							onclick="window.open('https://gtube.vercel.app/', '_blank')"
+						>
+							Live Demo
+						</button>
+					</div>
+				</div>
+				<div class="rounded-lg p-10 text-center border-2 border-black">
+					<img
+						class="rounded-lg w-[300px] h-[300px] object-cover"
+						src="data:image/jpeg;base64,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"
+						width="300"
+						alt=""
+					/>
+					<h2 class="font-bold text-3xl py-4">Project Two</h2>
+					<div class="flex justify-center gap-10">
+						<button
+							class="border-2 p-4 rounded-full w-full"
+							onclick="window.open('https://github.com/itmejayesh/E-Commerce_shoes','_blank')"
+						>
+							Github
+						</button>
+						<button
+							class="border-2 p-4 rounded-full w-full"
+							onclick="window.open('https://e-commerce-shoes-fcjo.vercel.app/', '_blank')"
+						>
+							Live Demo
+						</button>
+					</div>
+				</div>
+				<div class="rounded-lg p-10 text-center border-2 border-black">
+					<img
+						class="rounded-lg object-cover w-[300px] h-[300px]"
+						src="https://user-images.githubusercontent.com/103041733/254264822-05075596-2e46-44dc-a322-b0e9cda46ea6.png"
+						width="300"
+						alt=""
+					/>
+					<h2 class="font-bold text-3xl py-4">Project Three</h2>
+					<div class="flex justify-center gap-10">
+						<button
+							class="border-2 p-4 rounded-full w-full"
+							onclick="window.open('https://github.com/itmejayesh/TodoApp','_blank')"
+						>
+							Github
+						</button>
+						<button
+							class="border-2 p-4 rounded-full w-full"
+							onclick="window.open('https://todo-app-three-sage-39.vercel.app/login', '_blank')"
+						>
+							Live Demo
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section
+			id="contact"
+			class="pt-[4vh] mx-10 box-border gap-5 min-h-[80vh] mb-10"
+		>
+			<div class="text-center">
+				<p class="text-gray-400 text-lg">Get In Touch</p>
+				<h1 class="font-bold text-4xl">Contact Me</h1>
+			</div>
+			<div class="flex gap-4 flex-wrap justify-center py-10 gap-y-10 relative">
+				<div class="rounded-lg p-10 text-center border-2 border-black">
+					
+					<h2 class="font-bold text-3xl py-4">Project One</h2>
+					<div class="flex items-center justify-center gap-5	cursor-pointer">
+						<div class="flex items-center gap-3">
+							<img src="./assets//email.png" width="50" alt="">
+							<h4 id="send" class="text-2xl" onclick="sendMail()">jayeshgadhok@gmail.com</h4>
+						</div>
+						<div class="flex items-center gap-3 cursor-pointer">
+							<img src="./assets//email.png" width="50" alt="">
+							<h4 class="text-2xl" onclick="window.open('https://www.linkedin.com/in/jayesh-gadhok-138462152/', '_blank')">linkedin</h4>
+						</div>
+					</div>
+				</div>
+				
+		</section>
+
+		<footer class="bg-black flex justify-around items-center py-5">
+			<div
+				class="text-white flex gap-5 justify-center items-center cursor-pointer"
+			>
+				<div class="flex gap-5 justify-center items-center hover:text-blue-400">
+					<img
+						class="filter invert brightness-0 grayscale-100"
+						src="./assets/github.png"
+						width="30"
+						alt=""
+					/>Github
+				</div>
+				<div class="flex gap-5 justify-center items-center hover:text-blue-400">
+					<img
+						class="filter invert brightness-0 grayscale-100"
+						src="./assets/linkedin.png"
+						width="30"
+						alt=""
+					/>linkedin
+				</div>
+				<div class="flex gap-3 justify-center items-center hover:text-blue-400">
+					<img
+						class="filter invert brightness-0 grayscale-100"
+						src="./assets/743397.png"
+						width="40"
+						alt=""
+					/>Facebook
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

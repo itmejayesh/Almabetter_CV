@@ -1,0 +1,16 @@
+.menu-links.open {
+	max-height: 300px;
+	overflow: visible !important;
+}
+
+.hamburger-icon.open span:first-child {
+	transform: rotate(45deg) translate(10px, 4px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+	transform: rotate(-45deg) translate(10px, -4px);
+}
